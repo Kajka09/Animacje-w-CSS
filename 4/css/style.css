@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+}
+
+.container {
+	position:relative;
+	overflow: hidden;
+}
+
+.outter {
+	width: 25%;
+	height: 100vh;
+	display: inline-block;
+	float:left;
+	transition: all 0.5s linear;
+}
+
+.outter:last-child {
+	position: absolute;
+	right:0;
+}
+
+.inner {
+	height: 100%;
+	width: 200%;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#inner-1 {
+	background-image:url(../img/portfolio1.jpg);
+}
+
+#inner-2 {
+	background-image:url(../img/portfolio2.jpg);
+}
+
+#inner-3 {
+	background-image:url(https://cdn.pixabay.com/photo/2016/01/08/16/53/flame-1128636_960_720.jpg);
+}
+
+#inner-4 {
+	background-image:url(../img/portfolio4.jpg);	
+}
+
+.outter:hover  {
+	width:40%;
+}
+
+.container:hover .outter:not(:hover){
+	width:20%;
+} 
