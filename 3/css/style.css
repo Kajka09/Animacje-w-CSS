@@ -1,0 +1,22 @@
+p {
+	font-size: 100px;
+	margin-top: 0;
+	text-align: center;
+}
+
+p .fa-heart {
+	color:red;
+	animation-name: puls;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes puls {
+    0%, 100% { 
+		transform: scale(1); 
+	}
+    50% { 
+		transform: scale(1.3);
+	}
+    
+}
